@@ -38,6 +38,7 @@
   {
     "name": "Bitcoin Core",
     "url": "https://bitcoincore.org",
+    "logo": "/img/bitcoin.png",
     "description": "Official Bitcoin reference implementation",
     "category": "Node",
     "tags": ["Bitcoin", "Open Source", "Full Node"],
@@ -95,7 +96,6 @@
     "description": "Decentralized Bitcoin exchange",
     "category": "Exchange",
     "tags": ["Bitcoin", "DEX", "P2P"],
-    "rating": 4,
     "recommended": false
   },
   {
@@ -104,7 +104,16 @@
     "description": "Bitcoin layer for smart contracts and dApps",
     "category": "Protocol",
     "tags": ["Bitcoin", "Smart Contracts", "Layer 2"],
-    "rating": 3.5,
+    "recommended": false
+  },
+  {
+    "name": "CoinGecko",
+    "url": "https://www.coingecko.com/",
+    "logo": "https://www.coingecko.com/favicon-96x96.png",
+    "description": "Cryptocurrency Prices, Charts, and Crypto Market Cap",
+    "category": "Media",
+    "tags": ["Bitcoin", "Open Source", "Market Data"],
+    "rating": 5,
     "recommended": false
   }
 ]
