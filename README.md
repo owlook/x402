@@ -100,12 +100,12 @@ Once your PR is merged, the website will automatically rebuild and deploy within
 
 ## 🚀 Local Development
 
-Want to run BTCNav locally?
+Want to run x402Nav locally?
 
 ```bash
 # Clone the repository
-git clone https://github.com/owlook/btcnav.git
-cd btcnav
+git clone https://github.com/owlook/x402.git
+cd x402
 
 # Install dependencies
 npm install
