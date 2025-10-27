@@ -8,7 +8,7 @@ export const Header = () => {
       <div className="container mx-auto px-4 py-6">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src={logo} alt="x402 Logo" className="h-10 w-10" />
+            <img src={logo} alt="x402 Logo" className="h-10 w-auto" />
             <div>
               <h1 className="text-3xl font-bold text-gradient">x402</h1>
               <p className="text-sm text-muted-foreground">x402 Navigator</p>
