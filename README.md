@@ -8,7 +8,7 @@
 
 A curated, community-maintained directory of x402 payment protocol tools, APIs, and resources.
 
-[Visit Website](https://x402nav.vercel.app) • [Contribute](#-how-to-contribute) • [Report Issue](https://github.com/yourusername/x402/issues)
+[Visit Website](https://x402nav.vercel.app) • [Contribute](#-how-to-contribute) • [Report Issue](https://github.com/owlook/x402/issues)
 
 </div>
 
@@ -66,14 +66,14 @@ Edit the `/data/sites.json` file and add your resource following this format:
 
 #### Field Guidelines
 
-| Field | Required | Description |
-|-------|----------|-------------|
-| `name` | ✅ Yes | Official name of the resource |
-| `url` | ✅ Yes | Full URL starting with https:// |
-| `description` | ✅ Yes | Clear, concise description (60-100 chars) |
-| `category` | ✅ Yes | One of the categories listed above |
-| `tags` | ❌ No | Array of relevant tags for filtering |
-| `logo` | ❌ No | Direct URL to logo image (SVG or PNG) |
+| Field         | Required | Description                               |
+| ------------- | -------- | ----------------------------------------- |
+| `name`        | ✅ Yes   | Official name of the resource             |
+| `url`         | ✅ Yes   | Full URL starting with https://           |
+| `description` | ✅ Yes   | Clear, concise description (60-100 chars) |
+| `category`    | ✅ Yes   | One of the categories listed above        |
+| `tags`        | ❌ No    | Array of relevant tags for filtering      |
+| `logo`        | ❌ No    | Direct URL to logo image (SVG or PNG)     |
 
 ### Step 3: Submit a Pull Request
 
@@ -104,7 +104,7 @@ Want to run BTCNav locally?
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/btcnav.git
+git clone https://github.com/owlook/btcnav.git
 cd btcnav
 
 # Install dependencies
@@ -182,9 +182,9 @@ Built with ❤️ for the x402 community. Special thanks to all contributors who
 
 - [Website](https://x402nav.vercel.app)
 - [x402 Documentation](https://x402.gitbook.io/x402)
-- [GitHub Repository](https://github.com/yourusername/x402)
-- [Submit an Issue](https://github.com/yourusername/x402/issues)
-- [Request a Feature](https://github.com/yourusername/x402/issues/new)
+- [GitHub Repository](https://github.com/owlook/x402)
+- [Submit an Issue](https://github.com/owlook/x402/issues)
+- [Request a Feature](https://github.com/owlook/x402/issues/new)
 
 ---
 

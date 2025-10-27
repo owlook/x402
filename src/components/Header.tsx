@@ -13,17 +13,8 @@ export const Header = () => {
               <p className="text-sm text-muted-foreground">x402 Navigator</p>
             </div>
           </div>
-          <Button
-            variant="outline"
-            size="lg"
-            className="gap-2"
-            asChild
-          >
-            <a
-              href="https://github.com/yourusername/x402"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <Button variant="outline" size="lg" className="gap-2" asChild>
+            <a href="https://github.com/owlook/x402" target="_blank" rel="noopener noreferrer">
               <Github className="h-5 w-5" />
               <span className="hidden sm:inline">Contribute</span>
             </a>
