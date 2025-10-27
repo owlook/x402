@@ -1,14 +1,14 @@
-# 🧭 BTCNav - Bitcoin Resource Navigator
+# 🧭 x402 Navigator - Payment Protocol Resources
 
 <div align="center">
   
-[![Bitcoin Orange](https://img.shields.io/badge/Bitcoin-F7931A?style=for-the-badge&logo=bitcoin&logoColor=white)](https://bitcoin.org)
+[![x402 Protocol](https://img.shields.io/badge/x402-F7931A?style=for-the-badge&logo=bitcoin&logoColor=white)](https://x402.gitbook.io/x402)
 [![Open Source](https://img.shields.io/badge/Open%20Source-100%25-orange?style=for-the-badge)](https://github.com)
 [![Community Driven](https://img.shields.io/badge/Community-Driven-orange?style=for-the-badge)](https://github.com)
 
-A curated, community-maintained directory of Bitcoin tools, wallets, explorers, and resources.
+A curated, community-maintained directory of x402 payment protocol tools, APIs, and resources.
 
-[Visit Website](https://btcnav.vercel.app) • [Contribute](#-how-to-contribute) • [Report Issue](https://github.com/yourusername/btcnav/issues)
+[Visit Website](https://x402nav.vercel.app) • [Contribute](#-how-to-contribute) • [Report Issue](https://github.com/yourusername/x402/issues)
 
 </div>
 
@@ -16,14 +16,14 @@ A curated, community-maintained directory of Bitcoin tools, wallets, explorers, 
 
 ## 🎯 About
 
-BTCNav is an open-source navigation website designed to help the Bitcoin community discover and access essential tools, wallets, block explorers, and educational resources. Built with modern web technologies and designed with the iconic Bitcoin orange theme.
+x402 Navigator is an open-source directory designed to help developers and businesses discover x402-compatible tools, APIs, payment processors, and resources. The x402 protocol enables services to charge for API access directly over HTTP using the 402 Payment Required status code, supporting crypto-native payments for speed, privacy, and efficiency.
 
 ### Features
 
 ✨ **Real-time Search** - Filter resources by name, description, or tags  
 🏷️ **Smart Filtering** - Browse by category and combine multiple tag filters  
 📱 **Responsive Design** - Beautiful experience on desktop and mobile  
-🎨 **Bitcoin Theme** - Classic orange and black color scheme  
+🎨 **x402 Theme** - Modern orange and black color scheme  
 🔄 **Auto-Deploy** - Contributions are automatically deployed via Vercel  
 🌐 **Open Source** - Community-driven and transparent
 
@@ -121,7 +121,7 @@ Visit `http://localhost:8080` to see your local instance.
 ## 📋 Project Structure
 
 ```
-/btcnav
+/x402
 ├── /data
 │   └── sites.json          # All resource data
 ├── /src
@@ -133,7 +133,7 @@ Visit `http://localhost:8080` to see your local instance.
 │   │   └── SiteCard.tsx
 │   ├── /pages
 │   │   └── Index.tsx       # Main page
-│   └── index.css           # Bitcoin theme styles
+│   └── index.css           # x402 theme styles
 └── README.md
 ```
 
@@ -143,17 +143,17 @@ Visit `http://localhost:8080` to see your local instance.
 
 ### ✅ We Accept
 
-- Open-source Bitcoin projects
-- Established wallets and explorers
-- Educational resources and tools
-- Developer tools and APIs
-- News and media platforms
-- Community-recognized services
+- x402-compatible APIs and services
+- Payment processors and tools
+- Developer libraries and SDKs
+- Educational resources and documentation
+- Community projects and tools
+- x402 implementation examples
 
 ### ❌ We Don't Accept
 
 - Scams or fraudulent projects
-- Shitcoins or non-Bitcoin cryptocurrencies
+- Non-x402 payment systems
 - Unverified or suspicious platforms
 - Resources promoting illegal activities
 - Duplicate entries
@@ -174,21 +174,22 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 💖 Acknowledgments
 
-Built with ❤️ for the Bitcoin community. Special thanks to all contributors who help maintain and improve this resource.
+Built with ❤️ for the x402 community. Special thanks to all contributors who help maintain and improve this resource. Learn more about x402 at [x402.gitbook.io](https://x402.gitbook.io/x402).
 
 ---
 
 ## 🔗 Links
 
-- [Website](https://btcnav.vercel.app)
-- [GitHub Repository](https://github.com/yourusername/btcnav)
-- [Submit an Issue](https://github.com/yourusername/btcnav/issues)
-- [Request a Feature](https://github.com/yourusername/btcnav/issues/new)
+- [Website](https://x402nav.vercel.app)
+- [x402 Documentation](https://x402.gitbook.io/x402)
+- [GitHub Repository](https://github.com/yourusername/x402)
+- [Submit an Issue](https://github.com/yourusername/x402/issues)
+- [Request a Feature](https://github.com/yourusername/x402/issues/new)
 
 ---
 
 <div align="center">
   
-**Made with ⚡ by the Bitcoin community**
+**Made with ⚡ by the x402 community**
 
 </div>

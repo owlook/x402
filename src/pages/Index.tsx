@@ -72,11 +72,11 @@ const Index = () => {
         {/* Hero Section */}
         <div className="text-center mb-12 space-y-6">
           <h2 className="text-5xl md:text-6xl font-bold text-gradient">
-            Explore Bitcoin Universe
+            x402 Payment Protocol Resources
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A curated collection of Bitcoin tools, wallets, explorers, and resources.
-            Community-maintained and open source.
+            Curated tools, APIs, and resources for the x402 open payment standard.
+            Enable programmatic payments over HTTP with crypto-native efficiency.
           </p>
         </div>
 

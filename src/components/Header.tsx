@@ -9,8 +9,8 @@ export const Header = () => {
           <div className="flex items-center gap-3">
             <Bitcoin className="h-10 w-10 text-primary" />
             <div>
-              <h1 className="text-3xl font-bold text-gradient">BTCNav</h1>
-              <p className="text-sm text-muted-foreground">Bitcoin Resource Navigator</p>
+              <h1 className="text-3xl font-bold text-gradient">x402</h1>
+              <p className="text-sm text-muted-foreground">x402 Navigator</p>
             </div>
           </div>
           <Button
@@ -20,7 +20,7 @@ export const Header = () => {
             asChild
           >
             <a
-              href="https://github.com/yourusername/btcnav"
+              href="https://github.com/yourusername/x402"
               target="_blank"
               rel="noopener noreferrer"
             >
