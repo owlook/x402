@@ -8,7 +8,7 @@
 
 A curated, community-maintained directory of x402 payment protocol tools, APIs, and resources.
 
-[Visit Website](https://x402nav.vercel.app) • [Contribute](#-how-to-contribute) • [Report Issue](https://github.com/owlook/x402/issues)
+[Visit Website](https://x402.owlook.top) • [Contribute](#-how-to-contribute) • [Report Issue](https://github.com/owlook/x402/issues)
 
 </div>
 
@@ -180,7 +180,7 @@ Built with ❤️ for the x402 community. Special thanks to all contributors who
 
 ## 🔗 Links
 
-- [Website](https://x402nav.vercel.app)
+- [Website](https://x402.owlook.top)
 - [x402 Documentation](https://x402.gitbook.io/x402)
 - [GitHub Repository](https://github.com/owlook/x402)
 - [Submit an Issue](https://github.com/owlook/x402/issues)
