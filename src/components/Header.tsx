@@ -1,5 +1,6 @@
-import { Bitcoin, Github } from "lucide-react";
+import { Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/x402-logo.png";
 
 export const Header = () => {
   return (
@@ -7,7 +8,7 @@ export const Header = () => {
       <div className="container mx-auto px-4 py-6">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <Bitcoin className="h-10 w-10 text-primary" />
+            <img src={logo} alt="x402 Logo" className="h-10 w-10" />
             <div>
               <h1 className="text-3xl font-bold text-gradient">x402</h1>
               <p className="text-sm text-muted-foreground">x402 Navigator</p>
