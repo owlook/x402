@@ -5,17 +5,25 @@
     "logo": "http://402coin.xyz/favicon.ico",
     "description": "Chinese x402-powered token with simple mint endpoints.",
     "category": "Token",
-    "tags": ["x402", "Token", "Mint"],
+    "tags": [
+      "x402",
+      "Token",
+      "Mint"
+    ],
     "rating": 4,
     "recommended": false
   },
   {
     "name": "CodeNut Pay",
     "url": "https://pay.codenut.ai",
-    "logo": "https://pay.codenut.ai/favicon.ico",
+    "logo": "https://pay.codenut.ai/logo-dark.svg",
     "description": "AI Web3 builder with x402 payment integration for dApps.",
     "category": "Payments",
-    "tags": ["x402", "Payments", "Developer"],
+    "tags": [
+      "x402",
+      "Payments",
+      "Developer"
+    ],
     "rating": 5,
     "recommended": true
   },
@@ -25,7 +33,11 @@
     "logo": "https://big-w.wtf/favicon.ico",
     "description": "$BIG W \u2013 a celebration-style token sold via x402 endpoints.",
     "category": "Token",
-    "tags": ["x402", "Token", "Meme"],
+    "tags": [
+      "x402",
+      "Token",
+      "Meme"
+    ],
     "rating": 4,
     "recommended": false
   },
@@ -35,17 +47,24 @@
     "logo": "https://womp.wtf/favicon.ico",
     "description": "$WOMP \u2013 a meme token exposed via x402 resources.",
     "category": "Token",
-    "tags": ["x402", "Token", "Meme"],
+    "tags": [
+      "x402",
+      "Token",
+      "Meme"
+    ],
     "rating": 4,
     "recommended": false
   },
   {
     "name": "Ping Observer",
     "url": "https://api.ping.observer",
-    "logo": "https://ping.observer/favicon.ico",
+    "logo": "https://cdn.dexscreener.com/cms/images/66fccd9c55c6a79e5aea763ede2b67b11ed1ddf3479839f904d894d3939ef200?width=64&height=64&fit=crop&quality=95&format=auto",
     "description": "First token launched on x402 with simple mint endpoints.",
     "category": "Token",
-    "tags": ["x402", "Token"],
+    "tags": [
+      "x402",
+      "Token"
+    ],
     "rating": 3,
     "recommended": false
   },
@@ -55,17 +74,25 @@
     "logo": "https://questflow.ai/favicon.ico",
     "description": "Orchestration layer where agents invoke paid resources via x402.",
     "category": "Service/Endpoint",
-    "tags": ["x402", "Agents", "Automation"],
+    "tags": [
+      "x402",
+      "Agents",
+      "Automation"
+    ],
     "rating": 5,
     "recommended": true
   },
   {
     "name": "Firecrawl API",
     "url": "https://api.firecrawl.dev",
-    "logo": "https://api.firecrawl.dev/favicon.ico",
+    "logo": "https://raw.githubusercontent.com/firecrawl/firecrawl/main/img/firecrawl_logo.png",
     "description": "Web crawling, scraping, and search API purchasable via x402.",
     "category": "Data/API",
-    "tags": ["x402", "Data", "Search"],
+    "tags": [
+      "x402",
+      "Data",
+      "Search"
+    ],
     "rating": 5,
     "recommended": true
   },
@@ -75,17 +102,25 @@
     "logo": "https://snack.money/favicon.ico",
     "description": "Micropayments to social accounts (X, Farcaster, GitHub) using USDC and x402.",
     "category": "Payments",
-    "tags": ["x402", "Micropayments", "USDC"],
+    "tags": [
+      "x402",
+      "Micropayments",
+      "USDC"
+    ],
     "rating": 4,
     "recommended": true
   },
   {
     "name": "Invokr API",
     "url": "https://api.invokr.dev",
-    "logo": "https://api.invokr.dev/favicon.ico",
+    "logo": "https://www.invokr.dev/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-white-2.9cbcb806.png&w=256&q=75",
     "description": "Turn APIs into pay-per-use endpoints with x402.",
     "category": "Service/Endpoint",
-    "tags": ["x402", "Monetization", "API"],
+    "tags": [
+      "x402",
+      "Monetization",
+      "API"
+    ],
     "rating": 4,
     "recommended": true
   },
@@ -95,37 +130,53 @@
     "logo": "http://ainalyst-api.xyz/favicon.ico",
     "description": "Experimental agent/data endpoints surfaced via x402.",
     "category": "Data/API",
-    "tags": ["x402", "Agents", "Data"],
+    "tags": [
+      "x402",
+      "Agents",
+      "Data"
+    ],
     "rating": 3,
     "recommended": false
   },
   {
     "name": "BIP (BIPx402)",
     "url": "http://api.bipx402.com",
-    "logo": "http://api.bipx402.com/favicon.ico",
+    "logo": "https://bipx402.com/logo.png",
     "description": "Mint 5k $BIP fair-launch token via x402; auto-liquidity on mint out.",
     "category": "Token",
-    "tags": ["x402", "Token", "Mint"],
+    "tags": [
+      "x402",
+      "Token",
+      "Mint"
+    ],
     "rating": 3,
     "recommended": false
   },
   {
     "name": "x402 Pepe",
     "url": "https://api.x402pepe.com",
-    "logo": "https://api.x402pepe.com/favicon.ico",
+    "logo": "https://www.x402pepe.xyz/_next/image?url=%2Flogo.png&w=256&q=75",
     "description": "x402-powered Pepe mint (some endpoints disabled).",
     "category": "Token",
-    "tags": ["x402", "Token", "Mint"],
+    "tags": [
+      "x402",
+      "Token",
+      "Mint"
+    ],
     "rating": 2,
     "recommended": false
   },
   {
     "name": "Retry402",
     "url": "https://api.retry402.com",
-    "logo": "https://api.retry402.com/favicon.ico",
+    "logo": "https://retry402.com/favicon.png",
     "description": "x402 utility token facilitator with mint endpoints.",
     "category": "Facilitator",
-    "tags": ["x402", "Token", "Facilitator"],
+    "tags": [
+      "x402",
+      "Token",
+      "Facilitator"
+    ],
     "rating": 4,
     "recommended": false
   },
@@ -135,7 +186,11 @@
     "logo": "https://x402zeroclick.com/favicon.ico",
     "description": "First NFT mint designed for AI agents using x402.",
     "category": "NFT",
-    "tags": ["x402", "NFT", "Agents"],
+    "tags": [
+      "x402",
+      "NFT",
+      "Agents"
+    ],
     "rating": 3,
     "recommended": false
   },
@@ -145,18 +200,12 @@
     "logo": "https://agentlayer.xyz/favicon.ico",
     "description": "Autonomous AI Agent Network exposing paid resources via x402.",
     "category": "Network/Agents",
-    "tags": ["x402", "Agents", "Network"],
+    "tags": [
+      "x402",
+      "Agents",
+      "Network"
+    ],
     "rating": 4,
-    "recommended": false
-  },
-  {
-    "name": "Punks Mocha",
-    "url": "https://punks-mocha.vercel.app",
-    "logo": "https://punks-mocha.vercel.app/favicon.ico",
-    "description": "Simple x402 POST endpoint demo for agents.",
-    "category": "Service/Endpoint",
-    "tags": ["x402", "Demo", "POST"],
-    "rating": 2,
     "recommended": false
   },
   {
@@ -165,7 +214,11 @@
     "logo": "https://x402cloud.xyz/favicon.ico",
     "description": "HTTP-native payments for NFT minting and collections on x402.",
     "category": "NFT",
-    "tags": ["x402", "NFT", "Mint"],
+    "tags": [
+      "x402",
+      "NFT",
+      "Mint"
+    ],
     "rating": 3,
     "recommended": false
   }
