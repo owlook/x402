@@ -1,0 +1,35 @@
+import { Bitcoin, Github } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
+export const Header = () => {
+  return (
+    <header className="border-b border-border/50 bg-background/50 backdrop-blur-md sticky top-0 z-50">
+      <div className="container mx-auto px-4 py-6">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <Bitcoin className="h-10 w-10 text-primary" />
+            <div>
+              <h1 className="text-3xl font-bold text-gradient">BTCNav</h1>
+              <p className="text-sm text-muted-foreground">Bitcoin Resource Navigator</p>
+            </div>
+          </div>
+          <Button
+            variant="outline"
+            size="lg"
+            className="gap-2"
+            asChild
+          >
+            <a
+              href="https://github.com/yourusername/btcnav"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Github className="h-5 w-5" />
+              <span className="hidden sm:inline">Contribute</span>
+            </a>
+          </Button>
+        </div>
+      </div>
+    </header>
+  );
+};

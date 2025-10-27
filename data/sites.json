@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Mempool.space",
+    "url": "https://mempool.space",
+    "description": "Open source Bitcoin block explorer and fee estimation",
+    "category": "Explorer",
+    "tags": ["Bitcoin", "Open Source", "Mainnet"]
+  },
+  {
+    "name": "Ordinals",
+    "url": "https://ordinals.com",
+    "description": "Bitcoin inscriptions and ordinal theory explorer",
+    "category": "NFT",
+    "tags": ["Ordinals", "Taproot", "NFT"]
+  },
+  {
+    "name": "Sparrow Wallet",
+    "url": "https://sparrowwallet.com",
+    "description": "Desktop Bitcoin wallet with advanced features",
+    "category": "Wallet",
+    "tags": ["Bitcoin", "Desktop", "Open Source"]
+  },
+  {
+    "name": "BlueWallet",
+    "url": "https://bluewallet.io",
+    "description": "Mobile Bitcoin and Lightning wallet",
+    "category": "Wallet",
+    "tags": ["Bitcoin", "Lightning", "Mobile"]
+  },
+  {
+    "name": "Bitcoin Core",
+    "url": "https://bitcoincore.org",
+    "description": "Official Bitcoin reference implementation",
+    "category": "Node",
+    "tags": ["Bitcoin", "Open Source", "Full Node"]
+  },
+  {
+    "name": "Lightning Network",
+    "url": "https://lightning.network",
+    "description": "Layer 2 payment protocol for instant Bitcoin transactions",
+    "category": "Protocol",
+    "tags": ["Lightning", "Layer 2", "Payments"]
+  },
+  {
+    "name": "Blockstream Explorer",
+    "url": "https://blockstream.info",
+    "description": "Bitcoin and Liquid Network block explorer",
+    "category": "Explorer",
+    "tags": ["Bitcoin", "Liquid", "Mainnet"]
+  },
+  {
+    "name": "BTCPay Server",
+    "url": "https://btcpayserver.org",
+    "description": "Self-hosted Bitcoin payment processor",
+    "category": "Payment",
+    "tags": ["Bitcoin", "Open Source", "Merchant"]
+  },
+  {
+    "name": "Amboss",
+    "url": "https://amboss.space",
+    "description": "Lightning Network analytics and node management",
+    "category": "Tool",
+    "tags": ["Lightning", "Analytics", "Node"]
+  },
+  {
+    "name": "Bitcoin Magazine",
+    "url": "https://bitcoinmagazine.com",
+    "description": "Bitcoin news, articles, and research",
+    "category": "Media",
+    "tags": ["News", "Education", "Research"]
+  },
+  {
+    "name": "Bisq",
+    "url": "https://bisq.network",
+    "description": "Decentralized Bitcoin exchange",
+    "category": "Exchange",
+    "tags": ["Bitcoin", "DEX", "P2P"]
+  },
+  {
+    "name": "Stacks",
+    "url": "https://stacks.co",
+    "description": "Bitcoin layer for smart contracts and dApps",
+    "category": "Protocol",
+    "tags": ["Bitcoin", "Smart Contracts", "Layer 2"]
+  }
+]
