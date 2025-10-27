@@ -1,4 +1,4 @@
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Star, ThumbsUp } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
@@ -10,10 +10,37 @@ interface SiteCardProps {
   category: string;
   tags: string[];
   logo?: string;
+  rating?: number;
+  recommended?: boolean;
   index: number;
 }
 
-export const SiteCard = ({ name, url, description, category, tags, logo, index }: SiteCardProps) => {
+const StarRating = ({ rating }: { rating: number }) => {
+  const fullStars = Math.floor(rating);
+  const hasHalfStar = rating % 1 !== 0;
+  const stars = [];
+
+  for (let i = 0; i < fullStars; i++) {
+    stars.push(
+      <Star key={`full-${i}`} className="h-4 w-4 fill-amber-400 text-amber-400" />
+    );
+  }
+
+  if (hasHalfStar) {
+    stars.push(
+      <div key="half" className="relative h-4 w-4">
+        <Star className="h-4 w-4 text-amber-400 absolute" />
+        <div className="overflow-hidden absolute w-1/2 h-full">
+          <Star className="h-4 w-4 fill-amber-400 text-amber-400" />
+        </div>
+      </div>
+    );
+  }
+
+  return <div className="flex gap-0.5">{stars}</div>;
+};
+
+export const SiteCard = ({ name, url, description, category, tags, logo, rating, recommended, index }: SiteCardProps) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -38,16 +65,24 @@ export const SiteCard = ({ name, url, description, category, tags, logo, index }
                     {name.charAt(0)}
                   </div>
                 )}
-                <div>
-                  <CardTitle className="text-xl group-hover:text-primary transition-colors">
-                    {name}
-                  </CardTitle>
-                  <Badge variant="secondary" className="mt-1 text-xs">
-                    {category}
-                  </Badge>
+                <div className="flex-1">
+                  <div className="flex items-center gap-2">
+                    <CardTitle className="text-xl group-hover:text-primary transition-colors">
+                      {name}
+                    </CardTitle>
+                    {recommended && (
+                      <ThumbsUp className="h-4 w-4 fill-emerald-500 text-emerald-500" />
+                    )}
+                  </div>
+                  <div className="flex items-center gap-2 mt-1">
+                    <Badge variant="secondary" className="text-xs">
+                      {category}
+                    </Badge>
+                    {rating && rating > 0 && <StarRating rating={rating} />}
+                  </div>
                 </div>
               </div>
-              <ExternalLink className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors" />
+              <ExternalLink className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0" />
             </div>
             <CardDescription className="text-base leading-relaxed">
               {description}

@@ -4,83 +4,107 @@
     "url": "https://mempool.space",
     "description": "Open source Bitcoin block explorer and fee estimation",
     "category": "Explorer",
-    "tags": ["Bitcoin", "Open Source", "Mainnet"]
+    "tags": ["Bitcoin", "Open Source", "Mainnet"],
+    "rating": 4.5,
+    "recommended": true
   },
   {
     "name": "Ordinals",
     "url": "https://ordinals.com",
     "description": "Bitcoin inscriptions and ordinal theory explorer",
     "category": "NFT",
-    "tags": ["Ordinals", "Taproot", "NFT"]
+    "tags": ["Ordinals", "Taproot", "NFT"],
+    "rating": 4,
+    "recommended": false
   },
   {
     "name": "Sparrow Wallet",
     "url": "https://sparrowwallet.com",
     "description": "Desktop Bitcoin wallet with advanced features",
     "category": "Wallet",
-    "tags": ["Bitcoin", "Desktop", "Open Source"]
+    "tags": ["Bitcoin", "Desktop", "Open Source"],
+    "rating": 5,
+    "recommended": true
   },
   {
     "name": "BlueWallet",
     "url": "https://bluewallet.io",
     "description": "Mobile Bitcoin and Lightning wallet",
     "category": "Wallet",
-    "tags": ["Bitcoin", "Lightning", "Mobile"]
+    "tags": ["Bitcoin", "Lightning", "Mobile"],
+    "rating": 4.5,
+    "recommended": true
   },
   {
     "name": "Bitcoin Core",
     "url": "https://bitcoincore.org",
     "description": "Official Bitcoin reference implementation",
     "category": "Node",
-    "tags": ["Bitcoin", "Open Source", "Full Node"]
+    "tags": ["Bitcoin", "Open Source", "Full Node"],
+    "rating": 5,
+    "recommended": true
   },
   {
     "name": "Lightning Network",
     "url": "https://lightning.network",
     "description": "Layer 2 payment protocol for instant Bitcoin transactions",
     "category": "Protocol",
-    "tags": ["Lightning", "Layer 2", "Payments"]
+    "tags": ["Lightning", "Layer 2", "Payments"],
+    "rating": 4.5,
+    "recommended": false
   },
   {
     "name": "Blockstream Explorer",
     "url": "https://blockstream.info",
     "description": "Bitcoin and Liquid Network block explorer",
     "category": "Explorer",
-    "tags": ["Bitcoin", "Liquid", "Mainnet"]
+    "tags": ["Bitcoin", "Liquid", "Mainnet"],
+    "rating": 4,
+    "recommended": false
   },
   {
     "name": "BTCPay Server",
     "url": "https://btcpayserver.org",
     "description": "Self-hosted Bitcoin payment processor",
     "category": "Payment",
-    "tags": ["Bitcoin", "Open Source", "Merchant"]
+    "tags": ["Bitcoin", "Open Source", "Merchant"],
+    "rating": 4.5,
+    "recommended": true
   },
   {
     "name": "Amboss",
     "url": "https://amboss.space",
     "description": "Lightning Network analytics and node management",
     "category": "Tool",
-    "tags": ["Lightning", "Analytics", "Node"]
+    "tags": ["Lightning", "Analytics", "Node"],
+    "rating": 3.5,
+    "recommended": false
   },
   {
     "name": "Bitcoin Magazine",
     "url": "https://bitcoinmagazine.com",
     "description": "Bitcoin news, articles, and research",
     "category": "Media",
-    "tags": ["News", "Education", "Research"]
+    "tags": ["News", "Education", "Research"],
+    "rating": 3,
+    "recommended": false
   },
   {
     "name": "Bisq",
     "url": "https://bisq.network",
     "description": "Decentralized Bitcoin exchange",
     "category": "Exchange",
-    "tags": ["Bitcoin", "DEX", "P2P"]
+    "tags": ["Bitcoin", "DEX", "P2P"],
+    "rating": 4,
+    "recommended": false
   },
   {
     "name": "Stacks",
     "url": "https://stacks.co",
     "description": "Bitcoin layer for smart contracts and dApps",
     "category": "Protocol",
-    "tags": ["Bitcoin", "Smart Contracts", "Layer 2"]
+    "tags": ["Bitcoin", "Smart Contracts", "Layer 2"],
+    "rating": 3.5,
+    "recommended": false
   }
 ]

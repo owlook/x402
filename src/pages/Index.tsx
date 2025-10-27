@@ -4,6 +4,14 @@ import { Footer } from "@/components/Footer";
 import { SearchBar } from "@/components/SearchBar";
 import { FilterBar } from "@/components/FilterBar";
 import { SiteCard } from "@/components/SiteCard";
+import {
+  Pagination,
+  PaginationContent,
+  PaginationItem,
+  PaginationLink,
+  PaginationNext,
+  PaginationPrevious,
+} from "@/components/ui/pagination";
 import sitesData from "../../data/sites.json";
 
 interface Site {
@@ -13,12 +21,17 @@ interface Site {
   category: string;
   tags: string[];
   logo?: string;
+  rating?: number;
+  recommended?: boolean;
 }
+
+const ITEMS_PER_PAGE = 12;
 
 const Index = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
+  const [currentPage, setCurrentPage] = useState(1);
 
   const sites: Site[] = sitesData;
 
@@ -57,6 +70,18 @@ const Index = () => {
       return matchesSearch && matchesCategory && matchesTags;
     });
   }, [sites, searchQuery, selectedCategory, selectedTags]);
+
+  // Pagination
+  const totalPages = Math.ceil(filteredSites.length / ITEMS_PER_PAGE);
+  const paginatedSites = useMemo(() => {
+    const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+    return filteredSites.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+  }, [filteredSites, currentPage]);
+
+  // Reset to page 1 when filters change
+  useMemo(() => {
+    setCurrentPage(1);
+  }, [searchQuery, selectedCategory, selectedTags]);
 
   const handleTagToggle = (tag: string) => {
     setSelectedTags((prev) =>
@@ -100,18 +125,68 @@ const Index = () => {
         {/* Results Count */}
         <div className="mb-6 text-center">
           <p className="text-sm text-muted-foreground">
-            Showing <span className="text-primary font-semibold">{filteredSites.length}</span> of{" "}
-            <span className="font-semibold">{sites.length}</span> resources
+            Showing{" "}
+            <span className="text-primary font-semibold">
+              {filteredSites.length > 0 ? (currentPage - 1) * ITEMS_PER_PAGE + 1 : 0}
+            </span>
+            {" - "}
+            <span className="text-primary font-semibold">
+              {Math.min(currentPage * ITEMS_PER_PAGE, filteredSites.length)}
+            </span>{" "}
+            of <span className="font-semibold">{filteredSites.length}</span> resources
           </p>
         </div>
 
         {/* Sites Grid */}
-        {filteredSites.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredSites.map((site, index) => (
-              <SiteCard key={site.url} {...site} index={index} />
-            ))}
-          </div>
+        {paginatedSites.length > 0 ? (
+          <>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+              {paginatedSites.map((site, index) => (
+                <SiteCard key={site.url} {...site} index={index} />
+              ))}
+            </div>
+
+            {/* Pagination */}
+            {totalPages > 1 && (
+              <Pagination>
+                <PaginationContent>
+                  <PaginationItem>
+                    <PaginationPrevious
+                      onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+                      className={
+                        currentPage === 1
+                          ? "pointer-events-none opacity-50"
+                          : "cursor-pointer"
+                      }
+                    />
+                  </PaginationItem>
+
+                  {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+                    <PaginationItem key={page}>
+                      <PaginationLink
+                        onClick={() => setCurrentPage(page)}
+                        isActive={currentPage === page}
+                        className="cursor-pointer"
+                      >
+                        {page}
+                      </PaginationLink>
+                    </PaginationItem>
+                  ))}
+
+                  <PaginationItem>
+                    <PaginationNext
+                      onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
+                      className={
+                        currentPage === totalPages
+                          ? "pointer-events-none opacity-50"
+                          : "cursor-pointer"
+                      }
+                    />
+                  </PaginationItem>
+                </PaginationContent>
+              </Pagination>
+            )}
+          </>
         ) : (
           <div className="text-center py-20">
             <p className="text-xl text-muted-foreground">
