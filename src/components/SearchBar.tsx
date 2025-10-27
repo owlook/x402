@@ -12,7 +12,7 @@ export const SearchBar = ({ value, onChange }: SearchBarProps) => {
       <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
       <Input
         type="text"
-        placeholder="Search Bitcoin tools, wallets, explorers..."
+        placeholder="Search X402 tools, projects..."
         value={value}
         onChange={(e) => onChange(e.target.value)}
         className="pl-12 h-14 text-lg bg-card/50 backdrop-blur-sm border-border/50 focus:border-primary focus:ring-primary"
