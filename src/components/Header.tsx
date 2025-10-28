@@ -14,12 +14,19 @@ export const Header = () => {
               <p className="text-sm text-muted-foreground">x402 Navigator</p>
             </div>
           </div>
-          <Button variant="outline" size="lg" className="gap-2" asChild>
-            <a href="https://github.com/owlook/x402" target="_blank" rel="noopener noreferrer">
-              <Github className="h-5 w-5" />
-              <span className="hidden sm:inline">Contribute</span>
-            </a>
-          </Button>
+          <div className="flex items-center gap-3">
+            <Button variant="default" size="lg" className="gap-2" asChild>
+              <a href="https://x402-api.owlook.top/donate?returnUrl=https%3A%2F%2Fx402.owlook.top%2F" target="_blank" rel="noopener noreferrer">
+                <span>Donate</span>
+              </a>
+            </Button>
+            <Button variant="outline" size="lg" className="gap-2" asChild>
+              <a href="https://github.com/owlook/x402" target="_blank" rel="noopener noreferrer">
+                <Github className="h-5 w-5" />
+                <span className="hidden sm:inline">Contribute</span>
+              </a>
+            </Button>
+          </div>
         </div>
       </div>
     </header>
