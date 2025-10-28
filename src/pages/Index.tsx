@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SearchBar } from "@/components/SearchBar";
@@ -12,6 +12,7 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination";
+import { useToast } from "@/hooks/use-toast";
 import sitesData from "../../data/sites.json";
 
 interface Site {
@@ -32,8 +33,27 @@ const Index = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
+  const { toast } = useToast();
 
   const sites: Site[] = sitesData;
+
+  // Check for donation success message
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const success = params.get("success");
+    const message = params.get("message");
+
+    if (success === "true" && message) {
+      toast({
+        title: "Donation Successful! 🎉",
+        description: decodeURIComponent(message),
+        duration: 10000,
+      });
+
+      // Clean up URL parameters
+      window.history.replaceState({}, "", window.location.pathname);
+    }
+  }, [toast]);
 
   // Extract unique categories and tags
   const categories = useMemo(() => {
